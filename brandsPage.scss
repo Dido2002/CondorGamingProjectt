@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:wght@400&display=swap');
+
+
+$text-font-family: 'Roboto', sans-serif;
+
+
+
+$primary-color: white;
+$secondary-color: #f2f2f2;
+$text-color-primary: #ed169b;
+$text-color-secondary: #e40175;
+$text-color-gray:#a3adb5;
+$text-black: black;
+$text-white: white;
+
+body,
+html,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li {
+    padding: 0;
+    margin: 0;
+}
+
+
+.body
+{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    height: 100%;
+    width: 100%;
+    outline: 0;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.header-section{
+    height:6rem;
+}
+.nav-link{
+    text-decoration:none;
+    font-weight:600;
+    font-size:1.4rem;
+    color:$text-black;
+}
+.nav-link:hover{
+    color:$text-color-primary;
+}
+.hamburger{
+    cursor: pointer;
+    display: none;
+}
+
+.bar{
+    display: block;
+    width:25px;
+    height:3px;
+    margin:5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition:all 0.3s ease-in-out;
+    background: black;
+}
+.btn-1{
+    line-height:1.32px;
+    padding: 25px 50px;
+    font-weight: 500;
+    font-size:28px;
+    border-radius: 8px;
+    border-style:solid;
+    background: $text-color-primary;
+    color:$primary-color;
+    border:none;
+    text-align: center;
+}
+.btn-1:hover{
+    background-color: $primary-color;
+    color:#ed169b;
+    border:3px solid $text-color-primary
+}
+.main-container{
+    height:75vh;
+    background-image:url('/Pictures/cover-our-brands-scaled.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+.brands-title{
+    color:white;
+}
+.brands-title::after{
+    background: #FF009F;
+    background: linear-gradient(90deg, #E40175 0%, #FF009F 100%);
+    bottom: 420px;
+    display: block;
+    position: absolute;
+    content: "";
+    height: 4px;
+    border-radius: 2px;
+    width: 180px;
+    left: calc(50% - 90px);
+}
+.line-brand-title{
+    height:4px; 
+    background-color: $primary-color;
+    width:14rem;
+}
+.portfolio-section {
+    height:100%;
+    padding-bottom: 8rem;
+}
+.portfolio-title{
+    font-size:3.2rem;
+}
+.portfolio-title::after{
+    background: #FF009F;
+    background: linear-gradient(90deg, #E40175 0%, #FF009F 100%);
+    bottom: -4px;
+    left: calc(50% - 90px);
+}
+.portfolio-title::after{
+    display: block;
+    position: absolute;
+    content: "";
+    height: 4px;
+    border-radius: 2px;
+    width: 180px;
+}
+.portfolio-info{
+    font-size:1.6rem;
+    font-weight:300;
+}
+.wrapper{
+    width: 80%;
+    height:100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center;
+    padding-top:2rem;
+}
+.image{
+    width:400px;
+    height:410px;
+    position:relative;
+    box-shadow:2px 2px 12px rgba(0,0,0,0.6);
+    border-radius:15px;
+}
+.p-img{
+    width:100%;
+    display:block;
+    margin:auto;
+}
+.content{
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    position:absolute;
+    background: rgba(0,0,0,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transition:0.6s;
+    padding-left:1rem;
+    padding-right:1rem;
+}
+.content:hover{
+    opacity: 1;
+    background-color: white;
+
+}
+.p-text{
+    color:$text-color-gray;
+    font-weight:400;
+    font-size:1.1rem;
+    line-height:1.2rem;
+}
+.opportunities-section{
+    height:85vh;
+    background-color: $secondary-color;
+}
+.opportunities-title{
+    font-size:3.2rem;
+}
+.opportunities-title::after{
+    background: #FF009F;
+    background: linear-gradient(90deg, #E40175 0%, #FF009F 100%);
+    bottom: -4px;
+    left: calc(50% - 90px);
+}
+.opportunities-title::after{
+    display: block;
+    position: absolute;
+    content: "";
+    height: 4px;
+    border-radius: 2px;
+    width: 180px;
+}
+.opportunities-h3{
+    font-size:2.4rem;
+}
+.opportunities-p{
+    font-size:1.8rem;
+    font-weight:300;
+}
+.section-container {
+    background-color: $text-color-primary;
+    height:30vh;
+}
+.section-title{
+    font-weight:300;
+    font-size:2.4rem;
+}
+.btn-2{
+    line-height:1.32px;
+    padding: 25px 50px;
+    font-weight: 500;
+    font-size:28px;
+    border-radius: 8px;
+    border-style:solid;
+    background: $primary-color;
+    color:$text-color-primary;
+    border:none;
+    text-align: center;
+}
+.btn-2:hover{
+    text-decoration:unset;
+    color:$primary-color;
+    background-color: $text-color-primary;
+    border:3px solid $primary-color;
+}
+.footer-section{
+    height:100%;
+    background-image:url('/Pictures/footer.png');
+    background-color: #111;
+    background-position: center;
+    background-repeat: repeat;
+    background-size:auto;
+}   
+.footer-links{
+    list-style-type: none;
+}
+.footer-a{
+    color:white;
+    font-size:1.2rem;
+}
+.footer-a:hover{
+    color:$text-color-primary;
+    text-decoration: none;
+}
+.footer-icon{
+    color:white;
+    font-size:2rem;
+}
+.footer-icon:hover{
+    color:$text-color-primary;
+}
+.social{
+    padding-left:2rem;
+}
+
+.footer-line{
+    height:1px;
+    background-color:$text-color-secondary;
+    width:60rem;
+}
+
+@media(max-width:768px){
+    .hamburger
+    {
+        display: block;
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform:translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform:translateY(-8px) rotate(-45deg);
+    }
+    .nav-menu{
+        position:fixed;
+        left:-100%;
+        top:70px;
+        gap:0;
+        flex-direction: column;
+        background: $text-color-primary;
+        width:100%;
+        text-align: center;
+        transition:0.3s;
+        z-index:100;
+    }
+    .nav-link{
+        color:$primary-color;
+    }
+    .nav-item{
+        margin:16px 0;
+    }
+    .nav-menu.active{
+        left:-150px;
+    }
+    .logo-img{
+        width:80% !important;
+        margin-right:20px;
+    }
+    .main-container{
+        height:60vh;
+        background-image:url('/Pictures/cover-our-brands-scaled.jpg');
+        background-size:contain;
+        background-repeat: no-repeat;
+        width: 100%;
+    }
+    .brands-title{
+        color:$text-black !important;
+        font-size:1.8rem !important;
+        margin-left:1.8rem;
+    }
+    .portfolio-title{
+        font-size:1.8rem;
+    }
+    .portfolio-info{
+        font-size:1.2rem;
+    }
+    .wrapper{
+        width: 100%;
+        height:100%;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        flex-direction: column;
+    }
+    .image{
+        width:280px;
+        height:300px;
+        position:relative;
+        box-shadow:2px 2px 12px rgba(0,0,0,0.6);
+        border-radius:15px;
+        margin-top:2rem;
+    }
+    .content-title{
+        font-size:1.4rem;
+    }
+    .p-text{
+        font-size:0.8rem;
+    }
+    .opportunities-title{
+        font-size:2rem;
+    }
+    .opportunities-h3{
+        font-size:1.8rem;
+    }
+    .opportunities-p{
+        font-size:1.2rem;
+    }
+    .section-title{
+        font-size:1.4rem;
+        text-align: center;
+    }
+    .footer-links{
+        flex-direction:column !important;
+        line-height:2.4rem;
+    }
+   
+    .logo-footer{
+        padding-top:5rem;
+    }
+    .socials-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        width:100%;
+        
+    }
+    .value-title{
+        font-size:2rem !important;
+    }
+    .value-text{
+        font-size:1.2rem;
+    }
+}
