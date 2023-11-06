@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:wght@400&display=swap');
+
+
+$text-font-family: 'Roboto', sans-serif;
+
+
+
+$primary-color: white;
+$secondary-color: #f2f2f2;
+$text-color-primary: #ed169b;
+$text-color-secondary: #e40175;
+$text-color-gray:#a3adb5;
+$text-black: black;
+$text-white: white;
+
+body,
+html,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li {
+    padding: 0;
+    margin: 0;
+}
+
+
+.body
+{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    height: 100%;
+    width: 100%;
+    outline: 0;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.header-section{
+    height:6rem;
+}
+.nav-link{
+    text-decoration:none;
+    font-weight:600;
+    font-size:1.4rem;
+    color:$text-black;
+}
+.nav-link:hover{
+    color:$text-color-primary;
+}
+.hamburger{
+    cursor: pointer;
+    display: none;
+}
+
+.bar{
+    display: block;
+    width:25px;
+    height:3px;
+    margin:5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition:all 0.3s ease-in-out;
+    background: black;
+}
+.btn-1{
+    line-height:1.32px;
+    padding: 25px 50px;
+    font-weight: 500;
+    font-size:28px;
+    border-radius: 8px;
+    border-style:solid;
+    background: $text-color-primary;
+    color:$primary-color;
+    border:none;
+    text-align: center;
+}
+.btn-1:hover{
+    background-color: $primary-color;
+    color:#ed169b;
+    border:3px solid $text-color-primary
+}
+.main-container{
+    height:75vh;
+    background-image:url('/Pictures/cover-contact-scaled.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+.contact-title-main{
+    color:white;
+}
+.contact-title-main::after{
+    display: block;
+    content: "";
+    position: absolute;
+    bottom: 410px;
+    background: #FF009F;
+    background: linear-gradient(90deg, #E40175 0%, #FF009F 100%);
+    left: calc(50% - 90px);
+    height: 4px;
+    border-radius: 2px;
+    width: 180px;
+}
+.line-brand-title{
+    height:4px; 
+    background-color: $primary-color;
+    width:14rem;
+}
+.contact-section{
+    height:100%;
+}
+.contact-title::after{
+    display: block;
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    background: #FF009F;
+    background: linear-gradient(90deg, #E40175 0%, #FF009F 100%);
+    left: calc(50% - 90px);
+    height: 4px;
+    border-radius: 2px;
+    width: 180px;
+}
+.contact-p{
+    font-size:1.6rem;
+}
+.inputs{
+    width:90%;
+    height:4rem;
+    border-radius: 10px;
+    border:2px solid $text-color-gray;
+    margin-top:2rem;
+}
+.inputs::placeholder{
+    font-size:1.4rem;
+    padding-left:1rem;
+}
+.textarea-contact{
+    border-radius: 10px;
+    border:2px solid $text-color-gray;
+    margin-top:2rem;
+}
+.textarea-contact::placeholder{
+    font-size:1.4rem;
+    padding-left:1rem;
+}
+.form-btn-container{
+    padding-bottom: 4rem;
+}
+.info-section{
+    background: $secondary-color;
+}
+.info-row{
+    padding-top:4rem;
+}
+.info-title{
+    font-size:3.2rem;
+    font-weight: 700;
+
+}
+.info-title::after{
+    display: block;
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    background: #FF009F;
+    background: linear-gradient(90deg, #E40175 0%, #FF009F 100%);
+    left: calc(14% - 90px);
+    height: 4px;
+    border-radius: 2px;
+    width: 180px;
+}
+.p-info{
+    font-size:1.6rem;
+
+}
+.info-text{
+    font-size:1.4rem;
+
+}
+.fa-location-dot{
+    font-size:3rem;
+    color:$text-color-primary
+}
+.fa-envelope{
+    font-size:3rem;
+    color:$text-color-primary
+}
+.fa-clock{
+    font-size:3rem;
+    color:$text-color-primary
+}
+.info-map{
+    display: inline-block;
+    box-shadow: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.opportunities-h3{
+    font-size:2.4rem;
+}
+.opportunities-p{
+    font-size:1.8rem;
+    font-weight:300;
+}
+.opportunities-row{
+    padding-bottom: 5rem;
+}
+
+.btn-2{
+    line-height:1.32px;
+    padding: 25px 50px;
+    font-weight: 500;
+    font-size:28px;
+    border-radius: 8px;
+    border-style:solid;
+    background: $primary-color;
+    color:$text-color-primary;
+    border:none;
+    text-align: center;
+}
+.btn-2:hover{
+    text-decoration:unset;
+    color:$primary-color;
+    background-color: $text-color-primary;
+    border:3px solid $primary-color;
+}
+.footer-section{
+    height:100%;
+    background-image:url('/Pictures/footer.png');
+    background-color: #111;
+    background-position: center;
+    background-repeat: repeat;
+    background-size:auto;
+}   
+.footer-links{
+    list-style-type: none;
+}
+.footer-a{
+    color:white;
+    font-size:1.2rem;
+}
+.footer-a:hover{
+    color:$text-color-primary;
+    text-decoration: none;
+}
+.footer-icon{
+    color:white;
+    font-size:2rem;
+}
+.footer-icon:hover{
+    color:$text-color-primary;
+}
+.social{
+    padding-left:2rem;
+}
+
+.footer-line{
+    height:1px;
+    background-color:$text-color-secondary;
+    width:60rem;
+}
+
+@media(max-width:768px){
+    .hamburger
+    {
+        display: block;
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform:translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform:translateY(-8px) rotate(-45deg);
+    }
+    .nav-menu{
+        position:fixed;
+        left:-100%;
+        top:70px;
+        gap:0;
+        flex-direction: column;
+        background: $text-color-primary;
+        width:100%;
+        text-align: center;
+        transition:0.3s;
+        z-index:100;
+    }
+    .nav-link{
+        color:$primary-color;
+    }
+    .nav-item{
+        margin:16px 0;
+    }
+    .nav-menu.active{
+        left:-160px;
+    }
+    .logo-img{
+        width:80% !important;
+        margin-right:20px;
+    }
+    .main-container{
+        height:60vh;
+        background-image:url('/Pictures/cover-our-brands-scaled.jpg');
+        background-size:contain;
+        background-repeat: no-repeat;
+        width: 100%;
+    }
+    .contact-title-main{
+        color:black;
+        font-size:2rem !important;
+        margin-left:2rem;
+    }
+    .contact-title{
+        font-size:2rem !important;
+    }
+    .contact-p{
+        font-size:1.2rem !important;
+    }
+    .inputs{
+        width:100% !important;
+    }
+    .textarea-contact{
+        width:100% !important;
+    }
+    .info-title{
+        font-size:2rem !important;
+        text-align: center;
+    }
+    .info-title::after{
+        left: calc(50% - 90px);
+    }
+    .p-info{
+        font-size:1rem !important;
+        text-align: center;
+    }
+    .condor-title{
+        text-align: center;
+        padding-top:2rem;
+    }
+    .info-container{
+        flex-direction: column;
+    }
+    .info-text{
+        font-size:1.2rem !important;
+        text-align: center;
+    }
+    .info-img{
+        width:100%;
+    }
+    
+    .opportunities-title{
+        font-size:2rem;
+    }
+    .opportunities-h3{
+        font-size:1.8rem;
+    }
+    .opportunities-p{
+        font-size:1.2rem;
+    }
+    .section-title{
+        font-size:1.4rem;
+        text-align: center;
+    }
+    .footer-links{
+        flex-direction:column !important;
+        line-height:2.4rem;
+    }
+   
+    .logo-footer{
+        padding-top:5rem;
+    }
+    .socials-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        width:100%;
+        
+    }
+    .value-title{
+        font-size:2rem !important;
+    }
+    .value-text{
+        font-size:1.2rem;
+    }
+}
